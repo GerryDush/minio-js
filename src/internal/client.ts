@@ -1,8 +1,8 @@
 import * as crypto from 'node:crypto'
 import * as fs from 'node:fs'
 import type { IncomingHttpHeaders } from 'node:http'
-import * as http from 'node:http'
-import * as https from 'node:https'
+import * as http from 'follow-redirects/http';
+import * as https from 'follow-redirects/https';
 import * as path from 'node:path'
 import * as stream from 'node:stream'
 

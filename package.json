@@ -1,5 +1,5 @@
 {
-  "name": "minio",
+  "name": "minio-support-follow-redirects",
   "version": "8.0.4",
   "description": "S3 Compatible Cloud Storage client",
   "main": "./dist/main/minio.js",
@@ -89,6 +89,7 @@
     "buffer-crc32": "^1.0.0",
     "eventemitter3": "^5.0.1",
     "fast-xml-parser": "^4.4.1",
+    "follow-redirects": "^1.15.9",
     "ipaddr.js": "^2.0.1",
     "lodash": "^4.17.21",
     "mime-types": "^2.1.35",
@@ -109,6 +110,7 @@
     "@types/block-stream2": "^2.1.2",
     "@types/chai": "^4.3.11",
     "@types/chai-as-promised": "^7.1.8",
+    "@types/follow-redirects": "^1.14.4",
     "@types/lodash": "^4.14.194",
     "@types/mime-types": "^2.1.1",
     "@types/node": "^20.1.0",
