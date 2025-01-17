@@ -1,7 +1,7 @@
 {
   "name": "minio-support-follow-redirects",
-  "version": "8.0.4",
-  "description": "S3 Compatible Cloud Storage client",
+  "version": "8.0.5",
+  "description": "support large-file upload, follow-redirect",
   "main": "./dist/main/minio.js",
   "module": "./dist/esm/minio.mjs",
   "scripts": {
@@ -70,8 +70,8 @@
     "url": "git+https://github.com/minio/minio-js.git"
   },
   "author": {
-    "name": "MinIO, Inc.",
-    "url": "https://min.io"
+    "name": "GerryDush",
+    "url": "https://github.com/GerryDush"
   },
   "engines": {
     "node": "^16 || ^18 || >=20"

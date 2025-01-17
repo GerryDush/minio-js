@@ -11,7 +11,7 @@ export async function request(
   body: Buffer | string | stream.Readable | null = null,
 ): Promise<http.IncomingMessage> {
   return new Promise<http.IncomingMessage>((resolve, reject) => {
-    const requestObj = transport.request(opt, (resp) => {
+    const requestObj = transport.request({ ...opt, maxBodyLength :Infinity } as any, (resp) => {
       resolve(resp)
     })
 

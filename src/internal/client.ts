@@ -211,8 +211,8 @@ export class TypedClient {
   partSize: number = 64 * 1024 * 1024
   protected overRidePartSize?: boolean
 
-  protected maximumPartSize = 5 * 1024 * 1024 * 1024
-  protected maxObjectSize = 5 * 1024 * 1024 * 1024 * 1024
+  protected maximumPartSize = Infinity
+  protected maxObjectSize = Infinity
   public enableSHA256: boolean
   protected s3AccelerateEndpoint?: string
   protected reqOptions: Record<string, unknown>
@@ -1602,7 +1602,7 @@ export class TypedClient {
     bucketName: string,
     objectName: string,
     stream: stream.Readable | Buffer | string,
-    size?: number,
+    size: number = 0,
     metaData?: ItemBucketMetadata,
   ): Promise<UploadedObjectInfo> {
     if (!isValidBucketName(bucketName)) {
